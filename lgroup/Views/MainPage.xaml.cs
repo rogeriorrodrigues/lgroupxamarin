@@ -17,6 +17,8 @@ namespace lgroup
 
 		void AddClick(object sender, System.EventArgs e)
 		{
+
+			Navigation.PushModalAsync(new NavigationPage(new CadastroPage()));
 			/// <summary>
 			/// Exemplo de como navegar com uma page: PushAsync ,
 			///  PushModalAsync, PopModalAsync, PopAsync
