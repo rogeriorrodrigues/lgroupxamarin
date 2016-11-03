@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms" 
+		xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml" 
+		x:Class="lgroup.MainPage">
+	<ContentPage.Content>
+		<!-- Stack principal --> 
+		<StackLayout VerticalOptions="FillAndExpand" 
+				HorizontalOptions="FillAndExpand" Padding="10"
+				Spacing="10" BackgroundColor="Aqua" >
+			
+			<!-- Stacklayout dos botoes -->
+			<StackLayout VerticalOptions="StartAndExpand" 
+					HorizontalOptions="FillAndExpand"
+					BackgroundColor="Silver" Spacing="5" 
+					Orientation="Horizontal" >
+				
+				<Button Text="Adicionar" 
+					BackgroundColor="Green" TextColor="White"
+					FontAttributes="Bold" FontSize="10"
+					HorizontalOptions="FillAndExpand" Clicked="AddClick"/>
+
+				<Button Text="Excluir tudo" 
+					BackgroundColor="Red" TextColor="White"
+					FontAttributes="Bold" FontSize="10" 
+					HorizontalOptions="FillAndExpand"/>
+				
+			</StackLayout>
+
+			<!-- Listagem -->
+			<StackLayout VerticalOptions="EndAndExpand" 
+					HorizontalOptions="FillAndExpand"
+					BackgroundColor="Yellow" HeightRequest="400">
+				<ListView x:Name="lstContatos" 
+						HorizontalOptions="FillAndExpand"
+						VerticalOptions="FillAndExpand">
+				</ListView>
+				
+			</StackLayout>
+			
+		</StackLayout>
+	</ContentPage.Content>
+</ContentPage>
