@@ -57,7 +57,7 @@
 				</StackLayout>
 
 				<StackLayout HorizontalOptions="FillAndExpand">
-					<maps:Map HeightRequest="200" WidthRequest="200" 
+					<maps:Map x:Name="map" HeightRequest="200" WidthRequest="200" 
 						IsShowingUser="true" MapType="Street" />
 				</StackLayout>
 
