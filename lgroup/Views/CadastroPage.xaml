@@ -1,7 +1,8 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
 		xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
-		x:Class="lgroup.CadastroPage" 
+		x:Class="lgroup.CadastroPage"
+		xmlns:maps="clr-namespace:Xamarin.Forms.Maps;assembly=Xamarin.Forms.Maps"
 		Title="Cadastrar Novo" 
 		BackgroundColor="Silver">
 	<ContentPage.Content>
@@ -53,6 +54,11 @@
 					<Label Text="Data de Nacimento" HorizontalOptions="CenterAndExpand"/> 
 					<DatePicker x:Name="pkrDataNasc"
 						HorizontalOptions="CenterAndExpand"/>
+				</StackLayout>
+
+				<StackLayout HorizontalOptions="FillAndExpand">
+					<maps:Map HeightRequest="200" WidthRequest="200" 
+						IsShowingUser="true" MapType="Street" />
 				</StackLayout>
 
 				<!-- label e Button e IMAGE para fotos -->

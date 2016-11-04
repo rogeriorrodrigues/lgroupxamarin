@@ -24,6 +24,7 @@ namespace lgroup.Droid
 			global::Xamarin.Forms.Forms.Init(this, bundle);
 
 			UserDialogs.Init(this);
+			Xamarin.FormsMaps.Init(this, bundle);
 
 			LoadApplication(new App());
 		}
